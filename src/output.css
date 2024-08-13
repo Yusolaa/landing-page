@@ -1029,7 +1029,7 @@ header nav {
 
 .bg-card {
   height: 100%;
-  background-image: url(/images/jsbb.gif);
+  background-image: url(images/jsbb.gif);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1050,21 +1050,21 @@ header nav {
 }
 
 .careerOne-bg {
-  background-image: url(/images/career/sd.jpg);
+  background-image: url(images/career/sd.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .careerTwo-bg {
-  background-image: url(/images/career/data.webp);
+  background-image: url(images/career/data.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .careerThree-bg {
-  background-image: url(/images/career/ui.jpg);
+  background-image: url(images/career/ui.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
