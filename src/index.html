@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/ae6905387c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- relative position in the nav. just testing the sticky -->
+      <nav class="container mx-auto pt-1 px-2">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2">
+            <a href="#"
+              ><img
+                src="/images/oiclogo-removebg-preview.png"
+                alt="OIC Hub Logo"
+                width="50%"
+            /></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="nav-links hidden md:flex space-x-6">
+            <a href="#" class="hover:text-orange-500">Home</a>
+            <a href="#enroll" class="hover:text-orange-500">Enroll</a>
+            <a href="#career" class="hover:text-orange-500">Careers</a>
+            <div class="dropdown relative inline-block">
+              <a href="#" class="hover:text-orange-500">Classes</a>
+              <div class="dropdown-content absolute">
+                <div>
+                  <a href="#" class="hover:text-orange-500">Beginner</a>
+                  <a href="#" class="hover:text-orange-500">Intermediate</a>
+                  <a href="#" class="hover:text-orange-500">Advanced</a>
+                  <a href="#" class="hover:text-orange-500">Pofessional</a>
+                </div>
+              </div>
+            </div>
+            <a href="#about" class="hover:text-orange-500">About</a>
+          </div>
+          <!-- Hambugger Menu -->
+          <div class="md:hidden">
+            <button id="hamburger" class="text-gray-800 focus:outline-none">
+              <i class="iconbar fa fa-bars fa-2x"></i>
+              <!-- <i class="icontimes fa fa-times fa-2x hidden"></i> -->
+            </button>
+          </div>
+          <div
+            id="mobile-menu"
+            class="md:hidden hidden absolute top-20 left-0 w-full bg-gray-900 text-white py-1 px-8"
+          >
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-black">Home</a>
+              <a href="#enroll" class="text-black">Enroll</a>
+              <a href="#career" class="text-black">Careers</a>
+              <a href="#about" class="text-black">About</a>
+            </div>
+          </div>
+
+          <!-- Button Link -->
+          <a
+            href="#"
+            class="hidden md:flex p-3 px-6 text-black bg-blue-700 rounded-full items-baseline hover:bg-orange-400 transition ease-in-out duration-500"
+            >Get Started</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Main sections -->
+      <section
+        id="hero"
+        class="relative mt-24 bg-cover bg-center text-black flex items-center justify-center"
+      >
+        <div class="text-center p-6">
+          <h1 class="text-4xl md:text-6xl font-bold">
+            <sup class="text-orange-600">OIC</sup>Introduction To JavaScript
+          </h1>
+          <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+            JavaScript, often abbreviated as JS, is a versatile and powerful
+            programming language primarily known for its role in web development
+          </p>
+          <div class="mt-8">
+            <a
+              href="#"
+              class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section -->
+      <section
+        id="enroll"
+        class="mt-20 flex flex-col justify-center items-center"
+      >
+        <h1 class="text-3xl font-bold mb-4">Enroll - Levels</h1>
+        <div class="p-6 flex flex-col gap-6 md:flex-row md:gap-8">
+          <div class="card bg-slate-100 rounded-lg">
+            <img
+              src="/images/enroll/beginner.png"
+              alt="JavaScript Beginner Concepts"
+              class="w-full rounded-md"
+            />
+            <div class="card-content p-3">
+              <h2 class="font-bold mb-3 md:text-xl">Beginner Concepts</h2>
+
+              <ul class="leading-7 text-gray-800">
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Operators</li>
+                <li>Conditional Statements</li>
+                <li>Loops</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-slate-100 rounded-lg">
+            <img
+              src="/images/enroll/inter.jpg"
+              alt="JavaScript Beginner Concepts"
+              class="w-full rounded-md"
+            />
+            <div class="card-content p-3">
+              <h2 class="font-bold mb-3 md:text-xl">Intermediate Concepts</h2>
+
+              <ul class="leading-7 text-gray-800">
+                <li>Functions</li>
+                <li>Objects and Arrays</li>
+                <li>Events</li>
+                <li>DOM Manipulation</li>
+                <li>Basic Debugging</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-slate-100 rounded-lg">
+            <img
+              src="/images/enroll/advanced.png"
+              alt="JavaScript Beginner Concepts"
+              class="w-full rounded-md"
+            />
+            <div class="card-content p-3">
+              <h2 class="font-bold mb-3 md:text-xl">Advanced Concepts</h2>
+
+              <ul class="leading-7 text-gray-800">
+                <li>Basic Error Handling</li>
+                <li>ES6+ Features</li>
+                <li>Asynchronus</li>
+                <li>Project</li>
+                <li>Advanced Project</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-slate-100 rounded-lg">
+            <img
+              src="/images/enroll/advanced.png"
+              alt="JavaScript Beginner Concepts"
+              class="w-full rounded-md"
+            />
+            <div class="card-content p-3">
+              <h2 class="font-bold mb-1 md:text-xl">Pofessional Concepts</h2>
+              <p class="font-semibold italic">To get to professional Level</p>
+              <ul class="leading-7 text-gray-800">
+                <li>Work with a team</li>
+                <li>Build Projetcs</li>
+                <li>Enhance your tools using skill</li>
+                <li>Network</li>
+                <li>Good luck</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Careers Section -->
+      <section id="career" class="mt-20 p-4">
+        <!-- justify-center items-center -->
+        <h1 class="text-3xl font-bold mb-4 text-center">Careers</h1>
+        <div>
+          <div class="career flex flex-col gap-5">
+            <div class="careerOne-bg h-fit p-4">
+              <div class="carrer-content mt-5 text-white">
+                <h1 class="font-semibold text-xl">Software Development</h1>
+                <p class="text-shadow p-2">
+                  <strong> Software development</strong> is the process of
+                  designing, creating, testing, and maintaining software
+                  applications or systems. It involves a series of steps and
+                  methodologies to produce software that meets specific
+                  requirements or solves particular problems. Software
+                  development is a broad field that encompasses various
+                  activities, from writing and testing code to managing entire
+                  projects and ensuring software security and performance.
+                </p>
+              </div>
+            </div>
+            <div class="careerTwo-bg h-fit p-4">
+              <div class="carrer-content mt-5 text-white">
+                <h1 class="font-semibold text-xl">Data Science</h1>
+                <p class="text-shadow p-2">
+                  <strong>Data science</strong> is an interdisciplinary field
+                  that focuses on extracting knowledge, insights, and actionable
+                  information from data. It involves a combination of techniques
+                  from statistics, computer science, machine learning, and
+                  domain-specific knowledge to analyze large and complex
+                  datasets. Data science is used in various industries to make
+                  informed decisions, predict trends, and optimize processes.
+                </p>
+              </div>
+            </div>
+            <div class="careerThree-bg h-fit p-4">
+              <div class="carrer-content mt-5 text-white">
+                <h1 class="font-semibold text-xl">UI UX</h1>
+                <p class="text-shadow p-2">
+                  <strong>UI and UX </strong> design are essential components of
+                  creating successful digital products. UI focuses on the visual
+                  and interactive aspects of the product, UX is concerned with
+                  the overall experience and usability. Together, they ensure
+                  that users not only find a product appealing but also
+                  enjoyable and easy to use.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about" class="mt-20 p-4">
+        <h1 class="text-3xl font-bold mb-4 text-center">About</h1>
+        <div
+          class="text-lg md:text-xl text-gray-800 leading-relaxed px-5 text-center"
+        >
+          <p>
+            Welcome to <strong class="text-orange-500">OIC Hub</strong>, where
+            innovation meets excellence. We are a team of passionate
+            professionals dedicated to delivering high-quality products and
+            services that exceed our customers' expectations. With years of
+            experience in Tech, we have built a reputation for our commitment to
+            quality, integrity, and customer satisfaction.
+          </p>
+          <p class="mt-4">
+            Our mission is to empower our clients with solutions that drive
+            success and create lasting value. We believe in the power of
+            collaboration, innovation, and continuous improvement to achieve our
+            goals. Whether you are looking to learn or solve problems, we are
+            here to help you every step of the way.
+          </p>
+          <p>
+            Thank you for choosing
+            <strong class="text-orange-500">OIC Hub</strong>. We look forward to
+            partnering with you and helping you achieve your dreams.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-20">
+      <div class="container">
+        <div class="flex justify-center text-center">
+          <!-- Contact Section -->
+          <div class="mb-6">
+            <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+            <p class="text-gray-400">
+              Plot 12 Oduntan Str, Gbodofan Area, Aregbe Osogbo
+            </p>
+            <p class="text-gray-400">
+              Email: <a href=""> contact@company.com</a>
+            </p>
+            <p class="text-gray-400">Phone: (234) 456-7890</p>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <p class="text-gray-500 text-sm">
+            © 2024 <strong class="text-orange-500">OIC Hub LTD</strong> All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

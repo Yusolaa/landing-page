@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#career,
+#enroll {
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+#career,
+#enroll:target {
+  animation-delay: 0.2s;
+}
+
+body {
+  background-color: #f7f2f2;
+}
+
+header nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Mobile Nav */
+#mobile-menu {
+  /* transform: translateY(100%);
+  transition: transform 2s ease-in-out; */
+  background-color: rgba(255, 255, 255, 0.466);
+}
+
+/* #mobile-menu.active {
+  transform: translateY(0);
+} */
+
+#mobile-menu a {
+  padding: 2px;
+}
+
+#mobile-menu a:hover {
+  background-color: rgb(212, 142, 10);
+  color: white;
+}
+
+.open {
+  transform: translateY(0);
+}
+
+.nav-links a:hover {
+  transition: 0.5s ease-in-out;
+}
+
+.dropdown {
+  position: relative; /* Ensure the dropdown is positioned correctly */
+}
+
+.dropdown-content {
+  transform: scaleY(0) translateY(-10px); /* Initially scaled down and positioned above */
+  transform-origin: top;
+  /* Ensure scaling is from the top */
+  transition: transform 0.3s ease; /* Animate the transform property */
+  background-color: #f9f9f9cb;
+  min-width: 160px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: absolute; /* Ensure the dropdown is positioned correctly */
+}
+
+.dropdown:hover .dropdown-content {
+  transform: scaleY(1) translateY(0); /* Scale to full size and move into position */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  transform: translateX(10px);
+}
+
+.bg-hero-image {
+  background-image: url('/images/jsbb.gif');
+}
+
+.bg-card {
+  height: 100%;
+  background-image: url(/images/jsbb.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  /* max-width: 400px; */
+  box-shadow: 0px 5px 5px rgba(221, 218, 218, 0.815);
+  transition: transform 0.3s ease-in-out, cursor 0.3s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.card img {
+  max-width: 400px;
+}
+
+.careerOne-bg {
+  background-image: url(/images/career/sd.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.careerTwo-bg {
+  background-image: url(/images/career/data.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.careerThree-bg {
+  background-image: url(/images/career/ui.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-shadow {
+  background-color: rgba(145, 144, 144, 0.274);
+  font-size: 1.18rem;
+  /* text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.829); */
+}
